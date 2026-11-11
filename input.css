@@ -4,7 +4,7 @@
 
 @layer components {
   .btn-main {
-    @apply p-3 bg-[#0f766e] text-white font-semibold rounded-lg hover:bg-blue-700 transition mt-[-10px]
+    @apply p-2 bg-[#0f766e] text-white font-semibold rounded-lg hover:bg-blue-700 transition mt-[-10px]
   }
 
 body{
@@ -24,10 +24,13 @@ body{
   .selectedNav {
     @apply font-bold underline decoration-2 underline-offset-4
   }
-
-.logo p {
-  @apply text-4xl font-thin
+.logo {
+@apply flex gap-1
 }
+.logo p {
+  @apply text-4xl font-thin p-2
+}
+
 
 
 
