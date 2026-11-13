@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard – PlanIt AI</title>
+    <link rel="stylesheet" href="./output.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo">
+                <img src="./assets/img/logo-mark.svg">
+                <p> <span>PlanIt</span> <span class="text-[#0f766e]">AI</span></p>
+            </div>
+        </a>
+        <nav class="mainNav">
+            <a href="index.html" aria-current="page">Dashboard</a>
+            <a class="selectedNav" href="new-project.html">Nouveau projet</a>
+            <button class='btn-main' type="button" data-action="open-settings">
+                Paramètres IA
+            </button>
+        </nav>
+    </header>
+    <main>
+        <form class="newForm" data-parsley-validate id="projetForm">
+
+            <label for="title">Title</label>
+            <input name="title" type="text" id='title' required
+                data-parsley-required-message="Ce champ est obligatoire.">
+
+            <label for="description">Description :</label>
+            <textarea name="description" type="text" id='' required minlength="20"
+                data-parsley-minlength-message="Ce champ est obligatoire.et plus de 20 lettres"
+                data-parsley-required-message="Ce champ est obligatoire."></textarea>
+
+            <label for="Brief">Brief complete :</label>
+            <textarea name="Brief" type="text" id='Brief' required
+                data-parsley-required-message="Ce champ est obligatoire."> </textarea>
+
+
+            <label for="devs">nombre de devlopeurs : :</label>
+            <input name="devs " type="number" id='' required data-parsley-pattern="^[1-9][0-9]*$"
+                data-parsley-pattern-message="Entrez un nombre entier superior ou egal a 1">
+
+            <label for="techs">technologies: :</label>
+            <input name="techs" type="text" id='techs' required
+                data-parsley-pattern="^\s*[^,\s][^,]*(,\s*[^,\s][^,]*)*$"
+                data-parsley-pattern-message="Entrez une ou plusieurs technologies séparées par des virgules (ex. : HTML, CSS, JavaScript).">
+
+            <label for="difficulty">Niveau de difficulté :</label>
+            <select name="difficulty" id="difficulty" required
+                data-parsley-required-message="Choisissez un niveau de difficulté.">
+                <option value="">Choisir un niveau</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+            </select>
+
+            <button type="submit" class="btn-main  mt-5"> Envoyer </button>
+        </form>
+
+
+
+
+
+
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

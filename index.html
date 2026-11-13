@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="./settings.js" defer></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>
 </head>
 
 <body>
@@ -30,15 +33,40 @@
         </nav>
     </header>
     <main>
-        <h1>Mes Projets : </h1>
+        <dialog id="APImodal">
+
+            <div>
+                <h2 id="settings-title">Paramètres IA</h2>
+                <button type="button" data-action="close-settings" aria-label="Fermer">×</button>
+            </div>
+            <p>Votre clé API reste dans cet onglet et disparaît quand vous le fermez.</p>
+
+            <form id="key-form">
+                <label for="api-key">Clé API Gemini</label>
+                <input id="api-key" name="apiKey" type="password" autocomplete="off" placeholder="Collez votre clé ici"
+                    required>
+                <p>
+                    Pas de clé ? Créez-en une gratuitement dans
+                    <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener noreferrer">Google AI
+                        Studio</a>.
+                    Ne la partagez jamais et ne la collez pas dans votre code.
+                </p>
+                <button type="submit">Enregistrer la clé</button>
+            </form>
+
+            <p id="settings-status" ></p>
+
+            <p>ou</p>
+
+            <section>
+                <h3>Mode démo</h3>
+                <p>Charge un plan d’exemple sans appeler l’IA : utile pour tester sans clé ni quota.</p>
+                <button type="button" data-action="enable-demo">Activer le mode démo</button>
+            </section>
+
+        </dialog>
+        <h1 class=" text-3xl p-8">Mes Projets : </h1>
         <section class="taskBox"></section>
-
-
-
-
-
-
-
 
     </main>
     <footer>
