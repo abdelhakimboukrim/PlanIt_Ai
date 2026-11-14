@@ -1,6 +1,7 @@
-{
+[{
   "projectName": "Demo project",
   "totalEstimatedHours": 34,
+  "description": "A lightweight task tracking web app featuring validated project forms, API data integration, and LocalStorage persistence, styled with Tailwind CSS.",
   "tasks": [
     {"id":"TASK-001","title":"Set up repository and project structure","description":"Create the GitHub repository, folders and base HTML files.","userStories":["As a developer, I want a clean structure so that the project is easy to maintain."],"acceptanceCriteria":["Repository is public","Folders css/js exist"],"priority":"High","importance":"High","size":"XS","estimatedTime":2,"deadline":"Day 1","status":"To Do","dependencies":[]},
     {"id":"TASK-002","title":"Design the UI with Tailwind CSS","description":"Define colors, typography and the main layout.","userStories":["As a user, I want a clear interface so that I can find information quickly."],"acceptanceCriteria":["Layout is responsive","Colors are consistent"],"priority":"High","importance":"Medium","size":"M","estimatedTime":5,"deadline":"Day 2","status":"To Do","dependencies":["TASK-001"]},
@@ -10,4 +11,4 @@
     {"id":"TASK-006","title":"Persist data in LocalStorage","description":"Save and reload projects with JSON.stringify and JSON.parse.","userStories":["As a user, I want my data saved so that I do not lose it on refresh."],"acceptanceCriteria":["Data survives a page reload"],"priority":"Medium","importance":"Medium","size":"S","estimatedTime":3,"deadline":"Day 6","status":"To Do","dependencies":["TASK-005"]},
     {"id":"TASK-007","title":"Test, document and deploy","description":"Final tests, README and Vercel deployment.","userStories":["As a teacher, I want a documented deployed project so that I can evaluate it."],"acceptanceCriteria":["README explains setup","Site is online"],"priority":"Medium","importance":"High","size":"M","estimatedTime":6,"deadline":"Day 7","status":"To Do","dependencies":["TASK-006"]}
   ]
-}
+}]

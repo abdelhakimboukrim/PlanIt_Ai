@@ -5,7 +5,7 @@
 @layer components {
   html {scroll-behavior: smooth;}
   .btn-main {
-    @apply p-2 bg-[#0f766e] text-white font-semibold rounded-lg hover:bg-blue-700 transition mt-[-10px]
+    @apply p-5 bg-[#0f766e] text-white font-semibold rounded-lg hover:bg-blue-700 transition mt-[-10px]
   }
 
   body {
@@ -75,10 +75,23 @@
     @apply m-0 list-none p-0 text-sm text-red-700;
   }
 
+.projectCard{
+  @apply  flex flex-col gap-10 m-5 w-[300px] border border-gray-400 border-solid  rounded-md shadow-sm p-4 font-thin 
+  
+}
 
+.projectCard h2{
+  @apply text-black text-2xl
+}
+.progressBar{
+  @apply h-[10px] bg-slate-500 w-[100%]
+}
 
+.taskprogress{}
 
-
+.stats span { 
+  @apply border shadow-sm bg-slate-400 rounded-xl border-solid p-1 mx-3
+}
 
 
 

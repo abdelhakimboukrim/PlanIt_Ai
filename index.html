@@ -12,8 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="./settings.js" defer></script>
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>
+    <script src="./demo.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>
 </head>
 
 <body>
@@ -54,7 +55,7 @@
                 <button type="submit">Enregistrer la clé</button>
             </form>
 
-            <p id="settings-status" ></p>
+            <p id="settings-status"></p>
 
             <p>ou</p>
 
@@ -66,7 +67,26 @@
 
         </dialog>
         <h1 class=" text-3xl p-8">Mes Projets : </h1>
-        <section class="taskBox"></section>
+        <section class="taskBox">
+            <!-- text new-project -->
+
+            <article class ="projectCard">
+                <h2 >your project </h2>
+                <p>Site vitrine responsive avec galerie de projets et formulaire de contact.</p>
+                <div class="stats">
+                    <span>days </span>
+                    <span>devs </span>
+                    <span>level</span>
+                </div>
+                <div class=" flex taskprogress">
+                    <span><h5>done </h5>  <p >5</p> </span>
+                    <span><h5>total </h5>  <p>5</p> </span>
+                    <span> <h5>not done </h5> <p>5</p> </span>
+                </div>
+                <div class="progressBar"></div>
+                <button>task board </button>
+            </article>
+        </section>
 
     </main>
     <footer>
