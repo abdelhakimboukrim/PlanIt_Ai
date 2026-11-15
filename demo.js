@@ -5,6 +5,7 @@ const projects = [
     description:
       "A responsive web-based task and project management application built with HTML, JavaScript, and Tailwind CSS. It features real-time form validation, dynamic task card rendering from API data, and persistent browser storage via LocalStorage.",
       Ndevs : 5,
+      difficulty: 'meduim',
       tasks: [
       {
         id: "TASK-001",
