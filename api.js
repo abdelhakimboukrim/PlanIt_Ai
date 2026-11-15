@@ -8,11 +8,9 @@ export function loadDemoData() {
 
             return response.json();
         })
-        .then((data) => {
-            return data;
-        })
+        
         .catch((error) => {
             throw new Error(`Failed to load demo data: ${error.message}`)})
         }
- console.log(loadDemoData())
+ 
 

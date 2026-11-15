@@ -1,8 +1,8 @@
-// import { loadDemoData } from "./api.js";
+import { loadDemoData } from "./api.js";
 import { renderprojects } from "./ui.js";
 
  const projects = JSON.parse(localStorage.getItem('projects'))
-  
+  const demoProjects= loadDemoData()
  const settingsBTN= document.getElementById('settingsBTN')
  const dashboard =document.querySelector('.projectsBox')
 
@@ -10,5 +10,6 @@ import { renderprojects } from "./ui.js";
     renderprojects(projects,dashboard)
  })
 
+ console.log(demoProjects)
  
 
