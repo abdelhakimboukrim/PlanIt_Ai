@@ -717,10 +717,15 @@ form {
   color: rgb(185 28 28 / var(--tw-text-opacity, 1));
 }
 
+.projectsBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .projectCard {
   margin: 1.25rem;
   display: flex;
-  width: 300px;
+  width: 500px;
   flex-direction: column;
   gap: 2.5rem;
   border-radius: 0.375rem;
@@ -745,22 +750,47 @@ form {
 .progressBar {
   height: 10px;
   width: 100%;
+  border-radius: 0.75rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity, 1));
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity, 1));
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.taskprogress{
+.taskprogress {
+  display: flex;
+  justify-content: space-around;
+}
+
+.taskprogress span {
+  height: 100%;
+  width: 33.333333%;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(100 116 139 / var(--tw-border-opacity, 1));
+  padding: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+.taskprogress  h5 {
+  font-weight: 100;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
 .stats span {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
-  border-radius: 0.75rem;
+  border-radius: 9999px;
   border-width: 1px;
   border-style: solid;
   --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity, 1));
-  padding: 0.25rem;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity, 1));
+  padding: 0.5rem;
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);

@@ -4,7 +4,7 @@ import { renderprojects } from "./ui.js";
  const projects = JSON.parse(localStorage.getItem('projects'))
   
  const settingsBTN= document.getElementById('settingsBTN')
- const dashboard =document.querySelector('.projectBox')
+ const dashboard =document.querySelector('.projectsBox')
 
  settingsBTN.addEventListener('click', (e)=>{
     renderprojects(projects,dashboard)
