@@ -55,3 +55,14 @@ export function renderprojects(projects, container) {
 
 }
 
+export renderTasks(tasks ){
+
+for(let item of tasks ){
+    const taskCard=document.createElement('article')
+        taskCard.classList.add('taskCard')
+
+
+    )  
+}
+
+}
