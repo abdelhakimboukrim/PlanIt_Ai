@@ -6,7 +6,7 @@ export function renderprojects(projects, container) {
 
         const doneTsks = projects[i].tasks.filter(item => item.status === 'Done')
 
-        const percentage = projects[i].tasks.length === 0 ? 0 : Math.floor(doneTsks.length * 100 / projects[i].tasks.length)+67
+        const percentage = projects[i].tasks.length === 0 ? 0 : Math.floor(doneTsks.length * 100 / projects[i].tasks.length)+60
         const TailwindPercentage=`w-[${percentage}%]`
         const article = document.createElement('article')
 

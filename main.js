@@ -10,6 +10,7 @@ import { renderprojects } from "./ui.js";
     renderprojects(projects,dashboard)
  })
 
- console.log(demoProjects)
+ renderprojects(projects,dashboard)
+
  
 

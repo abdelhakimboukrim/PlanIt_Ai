@@ -14,7 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>
 
-    <script src="./api.js">  </script>
+    <script src="./main.js" type="module">  </script>
 </head>
 
 <body>
@@ -58,6 +58,10 @@
             <input name="techs" type="text" id='techs' required
                 data-parsley-pattern="^\s*[^,\s][^,]*(,\s*[^,\s][^,]*)*$"
                 data-parsley-pattern-message="Entrez une ou plusieurs technologies séparées par des virgules (ex. : HTML, CSS, JavaScript).">
+
+                <label for="devs">Nombre de joures : :</label>
+            <input name="devs " type="number" id='' required data-parsley-pattern="^[1-9][0-9]*$"
+                data-parsley-pattern-message="Entrez un nombre entier superior ou egal a 1">
 
             <label for="difficulty">Niveau de difficulté :</label>
             <select name="difficulty" id="difficulty" required
