@@ -14,5 +14,5 @@ export function loadDemoData() {
         .catch((error) => {
             throw new Error(`Failed to load demo data: ${error.message}`)})
         }
- 
+
 

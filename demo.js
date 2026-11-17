@@ -98,7 +98,7 @@ const projects = [
         size: "M",
         estimatedTime: 5,
         deadline: "Day 5",
-        status: "To Do",
+        status: "",
         dependencies: ["TASK-003", "TASK-004"],
       },
       {

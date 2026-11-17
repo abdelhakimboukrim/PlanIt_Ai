@@ -4,9 +4,9 @@ export function renderprojects(projects, container) {
 
     for (let i = 0; i < projects.length; i++) {
 
-        const doneTsks = projects[i].tasks.filter(item => item.status === 'Done')
+        const doneTsks = projects[i].tasks.filter(item => item.status == "")
 
-        const percentage = projects[i].tasks.length === 0 ? 0 : Math.floor(doneTsks.length * 100 / projects[i].tasks.length)+0
+        const percentage = projects[i].tasks.length === 0 ? 0 : Math.floor(doneTsks.length * 100 / projects[i].tasks.length)
         const TailwindPercentage=`w-[${percentage}%]`
         const article = document.createElement('article')
 
@@ -33,7 +33,7 @@ export function renderprojects(projects, container) {
                 
 
 
-                <button class = "btn-main" >Ouvrir le Task Board  </button>`
+               <a href="taskBoard.html?${projects[i].projectName}" > <button class = "btn-main" >Ouvrir le Task Board  </button></a>`
                console.log(TailwindPercentage)
 
 
@@ -55,15 +55,16 @@ export function renderprojects(projects, container) {
 
 }
 
-export renderTasks(tasks ){
+// export renderTasks(tasks ){
 
-for(let item of tasks ){
-    const article =document.createElement('article')
-        taskCard.classList.add('taskCard')
-        
+// for(let item of tasks ){
+//     const article =document.createElement('article')
+//         taskCard.classList.add('taskCard')
 
 
-    )  
-}
 
-}
+
+//     )  
+// }
+
+// }
