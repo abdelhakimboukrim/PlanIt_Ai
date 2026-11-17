@@ -10,7 +10,7 @@ loadDemoData()
     renderprojects(demoProjects,dashboard)
  })
 
- renderprojects(projects,dashboard)
+ renderprojects(demoProjects,dashboard)
 
  
 // let data = JSON.parse(localStorage.getItem('data'))
