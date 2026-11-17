@@ -1,5 +1,5 @@
 import { loadDemoData } from "./api.js";
-import { renderprojects } from "./ui.js";
+import { renderprojects , renderTasks} from "./ui.js";
 loadDemoData()
  const demoProjects = JSON.parse(localStorage.getItem('demoData'))
 
@@ -10,7 +10,7 @@ loadDemoData()
     renderprojects(demoProjects,dashboard)
  })
 
- renderprojects(demoProjects,dashboard)
+//  renderprojects(demoProjects,dashboard)
 
  
 // let data = JSON.parse(localStorage.getItem('data'))
