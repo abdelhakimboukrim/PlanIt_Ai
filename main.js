@@ -1,17 +1,19 @@
-import { loadDemoData } from "./api.js";
-import { renderprojects , renderTasks} from "./ui.js";
-loadDemoData()
- const demoProjects = JSON.parse(localStorage.getItem('demoData'))
 
- const settingsBTN= document.getElementById('settingsBTN')
- const dashboard =document.querySelector('.projectsBox')
 
- settingsBTN.addEventListener('click', (e)=>{
-    renderprojects(demoProjects,dashboard)
- })
+
+renderTasks(demoProjects[Number([window.location.search.split('=')[1]])])
+//  dashboard.addEventListener('click', (e)=>{
+//    if(e.target.classList.contains('taskBoardBTN')){
+//       const data_index=Number(e.target.dataset.index)
+
+//       renderTasks(demoProjects[data_index])
+//    }
+//  })
 
 //  renderprojects(demoProjects,dashboard)
 
- 
+
 // let data = JSON.parse(localStorage.getItem('data'))
 // console.log(data ,'reeeee')
+
+console.log(Number([window.location.search.split('=')[1]]))
