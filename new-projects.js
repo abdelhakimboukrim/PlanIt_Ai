@@ -22,14 +22,15 @@ projectForm.addEventListener('submit' ,(e)=>{
   new_project.description=newdescription.value.trim()
   new_project.brief=newbrief.value.trim()
   new_project.techs=newtechs.value.trim().split(',')
+  // new_project.devs=newdevs.value.trim()
   new_project.days=newdays.value.trim()
   new_project.difficulty=newdifficulty.value.trim()
-  projectForm.remove()
+  
   localStorage.setItem('new-project',JSON.stringify(new_project) )
-  window.location.href="index.html"
+  // window.location.href="index.html"
 
 
 })
 
 
-
+projectForm.reset()
