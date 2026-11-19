@@ -14,7 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>
 
-    <script src="./main.js" type="module">  </script>
+    <script src="./new-projects.js" type="module">  </script>
 </head>
 
 <body>
@@ -51,7 +51,7 @@
 
 
             <label for="devs">nombre de devlopeurs : :</label>
-            <input name="devs " type="number" id='' required data-parsley-pattern="^[1-9][0-9]*$"
+            <input name="devs " type="number" id='description' required data-parsley-pattern="^[1-9][0-9]*$"
                 data-parsley-pattern-message="Entrez un nombre entier superior ou egal a 1">
 
             <label for="techs">technologies: :</label>
@@ -59,8 +59,8 @@
                 data-parsley-pattern="^\s*[^,\s][^,]*(,\s*[^,\s][^,]*)*$"
                 data-parsley-pattern-message="Entrez une ou plusieurs technologies séparées par des virgules (ex. : HTML, CSS, JavaScript).">
 
-                <label for="devs">Nombre de joures : :</label>
-            <input name="devs " type="number" id='' required data-parsley-pattern="^[1-9][0-9]*$"
+                <label for="days">Nombre de joures : :</label>
+            <input name="days" type="number" id='days' required data-parsley-pattern="^[1-9][0-9]*$"
                 data-parsley-pattern-message="Entrez un nombre entier superior ou egal a 1">
 
             <label for="difficulty">Niveau de difficulté :</label>
@@ -72,7 +72,7 @@
                 <option value="Advanced">Advanced</option>
             </select>
 
-            <button type="submit" class="btn-main  mt-5"> Envoyer </button>
+            <button type="submit" class="btn-main  id='pdetails' mt-5"> Envoyer </button>
         </form>
 
 

@@ -554,6 +554,40 @@ video {
   display: none;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -782,32 +816,37 @@ form {
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 .stats span {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-  border-radius: 9999px;
+  border-radius: 1.5rem;
   border-width: 1px;
   border-style: solid;
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity, 1));
-  padding: 0.5rem;
+  padding: 0.75rem;
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .tasksBoard {
+  margin-top: 1.5rem;
   display: flex;
-  width: 90%;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .tasksContainer {
-  margin: 1.25rem;
   display: flex;
   height: 100vh;
-  width: 40%;
+  width: 500px;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 1.25rem;
   overflow: auto;
   border-radius: 0.375rem;
   border-width: 1px;
@@ -821,6 +860,27 @@ form {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.taskCard {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  gap: 2.5rem;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity, 1));
+  padding: 1rem;
+  font-weight: 100;
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.mb-\[-30px\] {
+  margin-bottom: -30px;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -829,8 +889,30 @@ form {
   display: flex;
 }
 
+.h-\[100\%\] {
+  height: 100%;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.bg-\[\#0f766e\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 118 110 / var(--tw-bg-opacity, 1));
+}
+
 .p-8 {
   padding: 2rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl {
@@ -838,7 +920,15 @@ form {
   line-height: 2.25rem;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .text-\[\#0f766e\] {
   --tw-text-opacity: 1;
   color: rgb(15 118 110 / var(--tw-text-opacity, 1));
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }

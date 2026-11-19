@@ -93,6 +93,7 @@
 .projectCard h2{
   @apply text-black text-2xl 
 }
+
 .progressBar{
   @apply h-[10px] bg-slate-200 w-[100%] shadow-md rounded-xl
 }
@@ -106,18 +107,24 @@
 .taskprogress  h5 {
   @apply text-black  font-thin
 }
+.stats{
+  @apply flex gap-4 flex-wrap
+}
 .stats span { 
-  @apply border shadow-sm bg-slate-300 rounded-full  border-solid p-2 mx-3
+  @apply border shadow-sm bg-slate-300 rounded-3xl border-solid p-3
 }
 
 
 
 
 .tasksBoard{
-  @apply flex w-[90%]
+  @apply flex flex-wrap mt-6 justify-around
 }
+
+
+
 .tasksContainer{
-  @apply flex flex-col gap-1 m-5 w-[40%]  h-screen overflow-auto border border-gray-400 border-solid  rounded-md shadow-xl p-4 font-thin 
+  @apply flex flex-col  gap-5 w-[500px]  h-screen overflow-auto border border-gray-400 border-solid  rounded-md shadow-xl p-4 font-thin 
   
 
 
@@ -126,4 +133,10 @@
 
 
 }
+.taskCard  {
+  @apply  flex flex-col gap-10 w-[90%] border border-gray-400 border-solid  rounded-md shadow-sm p-4 font-thin 
+  
+}
+
+
 }

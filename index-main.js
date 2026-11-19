@@ -1,5 +1,5 @@
-import { loadDemoData } from "./api.js";
-import { renderprojects, renderTasks } from "./ui.js";
+import { loadDemoData } from "./javaScript/api.js";
+import { renderprojects } from "./javaScript/ui.js";
 
 
 

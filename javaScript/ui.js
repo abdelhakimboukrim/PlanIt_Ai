@@ -36,7 +36,7 @@ export function renderprojects(projects, container) {
 
 
                <a class="taskBoardBTN" href="taskBoard.html?data=${i}" > <button class = "btn-main" >Ouvrir le Task Board  </button></a>`
-        console.log(TailwindPercentage)
+                console.log(TailwindPercentage)
 
 
 
@@ -189,6 +189,7 @@ export function renderprojects(projects, container) {
 //         deadline: "Day 7",
 //         status: "To Do",
 //         dependencies: ["TASK-006"],
+
 //     },
 // ]
 

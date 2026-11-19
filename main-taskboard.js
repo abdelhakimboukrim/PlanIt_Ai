@@ -1,6 +1,6 @@
 
-import { loadDemoData } from "./api.js";
-import { renderprojects, renderTasks } from "./ui.js";
+import { loadDemoData } from "./javaScript/api.js";
+import { renderprojects, renderTasks } from "./javaScript/ui.js";
 
 
 
@@ -25,4 +25,4 @@ renderTasks(demoProjects[Number([window.location.search.split('=')[1]])])
 // let data = JSON.parse(localStorage.getItem('data'))
 // console.log(data ,'reeeee')
 
-console.log(Number([window.location.search.split('=')[1]]))
+console.log(Number([window.location.search.split('=')[1]])) 

@@ -1,5 +1,6 @@
 [{
   "projectName": "Demo project",
+   "difficulty":"easy",
   "totalEstimatedHours": 34,
   "description": "A lightweight task tracking web app featuring validated project forms, API data integration, and LocalStorage persistence, styled with Tailwind CSS.",
   "Ndevs":5,
@@ -15,6 +16,7 @@
 }, {
   "projectName": "Demo project 2",
   "totalEstimatedHours": 80,
+  "difficulty":"meduim",
   "description": "A lightweight task tracking web app featuring validated project forms, API data integration, and LocalStorage persistence, styled with Tailwind CSS.",
   "Ndevs":5,
   "tasks": [
