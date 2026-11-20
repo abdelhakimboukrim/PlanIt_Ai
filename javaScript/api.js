@@ -88,6 +88,11 @@ export async function AIdata2(Ai_model, key, project){
          
 
         })})
+        if (resp.status === 401 || resp.status === 403) {
+  alert("Your API key is not correct or lacks permission.");
+   return
+}
+        console.log(resp.status)
         const data= await resp.json()
     const cleanData=JSON.parse(data.candidates[0].content.parts[0].text)
 
