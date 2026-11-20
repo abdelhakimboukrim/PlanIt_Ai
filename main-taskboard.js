@@ -7,10 +7,10 @@ import { renderprojects, renderTasks } from "./javaScript/ui.js";
 
 const demoProjects = JSON.parse(localStorage.getItem('demoData'))
 
+const current_projects = JSON.parse(localStorage.getItem('realdata')||'[]')
 
 
-
-renderTasks(demoProjects[Number([window.location.search.split('=')[1]])])
+renderTasks(current_projects[Number([window.location.search.split('=')[1]])])
 //  dashboard.addEventListener('click', (e)=>{
 //    if(e.target.classList.contains('taskBoardBTN')){
 //       const data_index=Number(e.target.dataset.index)

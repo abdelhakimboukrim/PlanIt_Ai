@@ -65,7 +65,7 @@ export async function AIdata(Ai_model, key, project) {
 
 
 //workiiiiiing 
-export async function AIdata2(Ai_model, key, project){
+export async function AIdata2(Ai_model, key, project, storage_key){
 
     const resp= await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${Ai_model}:generateContent?key=${key}`, {
         method: 'POST',
@@ -93,14 +93,21 @@ export async function AIdata2(Ai_model, key, project){
    return
 }
         console.log(resp.status)
-        const data= await resp.json()
-    const cleanData=JSON.parse(data.candidates[0].content.parts[0].text)
+     
+
 
 if (!resp.ok){
     console.error('API Error:');
      throw new Error(`request failed with : ${resp.status}`);
 
 }
+   const data= await resp.json()
+    const cleanData=JSON.parse(data.candidates[0].content.parts[0].text)
+
+    //stooriiiiiiiiing the daata 
+    const current_data= JSON.parse(localStorage.getItem('realdata'))||[]
+    current_data.push(cleanData)
+    localStorage.setItem('realdata', JSON.stringify(current_data))
 
 console.log(project)
 

@@ -47,7 +47,7 @@
 
             <div>
                 <h2 id="settings-title">Paramètres IA</h2>
-                <button type="button" data-action="close-settings" aria-label="Fermer">×</button>
+                <button type="button" data-action="close-settings" id="close_settings">×</button>
             </div>
             <p>Votre clé API reste dans cet onglet et disparaît quand vous le fermez.</p>
 
@@ -61,7 +61,7 @@
                         Studio</a>.
                     Ne la partagez jamais et ne la collez pas dans votre code.
                 </p>
-                <button type="submit">Enregistrer la clé</button>
+                <button type="submit" class="btn-main">Enregistrer la clé</button>
             </form>
 
             <p id="settings-status"></p>
@@ -71,7 +71,7 @@
             <section>
                 <h3>Mode démo</h3>
                 <p>Charge un plan d’exemple sans appeler l’IA : utile pour tester sans clé ni quota.</p>
-                <button type="button" data-action="enable-demo">Activer le mode démo</button>
+                <button type="button"class ='btn-main w-[50%] mt-3' data-action="enable-demo" id =''>Activer le mode démo</button>
             </section>
 
         </dialog>

@@ -139,4 +139,47 @@
 }
 
 
+
+ 
+
+  #key-form {
+    @apply flex flex-col gap-3 mt-4 p-5;
+  }
+
+  #key-form label {
+    @apply font-medium text-gray-700;
+  }
+
+  #api-key {
+    @apply w-full p-3 border rounded-lg }
+
+  #key-form p,
+  #settings-status {
+    @apply text-sm text-gray-500;
+  }
+
+  #key-form a {
+    @apply text-blue-600 underline;
+  }
+
+  
+
+  [data-action="close-settings"] {
+    @apply text-6xl text-gray-500 hover:text-red-500 flex justify-self-end;
+  }
+
+  dialog section {
+    @apply mt-4 p-4 bg-gray-100 rounded-lg;
+  }
+
+  dialog h3 {
+    @apply font-semibold text-gray-800 mb-2;
+  }
+
+  dialog {
+    @apply w-full max-w-md p-6 rounded-xl shadow-xl border;
+  }
+
+
+
 }

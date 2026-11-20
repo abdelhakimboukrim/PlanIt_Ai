@@ -9,6 +9,7 @@ Technologies: ${project.techs}
 Difficulty Level: ${project.difficulty} 
 Project Description: ${project.description}
 Project Brief: ${project.brief}
+
 [COMPLETE PROJECT BRIEF]
 YOUR TASK:
 Analyze the project carefully and break it down into actionable development tasks. For each task, generate the following information:
@@ -39,5 +40,7 @@ Return ONLY a valid JSON object, with no markdown, no code fences and no text be
     }
   ]
 }
+  also add keys for values i sent your 
+  like descriptin and devloupers and dificuly under 'description', 'Ndevs' and 'difficulty'
 Property names and allowed values must be written exactly as shown above.estimatedTime and totalEstimatedHours must be numbers, not strings.totalEstimatedHours must equal the sum of all estimatedTime values.Generate between 8 and 40 tasks, depending on the project duration, the team size and the difficulty level.`
 }

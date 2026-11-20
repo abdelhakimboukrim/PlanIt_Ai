@@ -30,15 +30,15 @@ projectForm.addEventListener('submit' ,(e)=>{
   new_project.days=newdays.value.trim()
   new_project.difficulty=newdifficulty.value.trim()
 
-  localStorage.setItem('new-project',JSON.stringify(new_project) )
+  // localStorage.setItem('new-project',JSON.stringify(new_project) )
     projectForm.reset()
   // window.location.href="index.html"
 console.log(prompt(new_project))
-
+AIdata2('gemini-3.5-flash-lite','',new_project)
 
 })
-const new_project=JSON.parse(localStorage.getItem('new-project'))
+// const new_project=JSON.parse(localStorage.getItem('new-project'))
 
-AIdata2('gemini-3.5-flash-lite','',new_project)
+
 
 
