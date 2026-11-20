@@ -1,4 +1,4 @@
-export function prompt(project){
+export default function prompt(project){
     return `You are an experienced Senior Project Manager and Agile Coach specialized in software development.
 Your mission is to analyze the project brief below and transform it into a detailed, realistic and well-organized development plan.
 PROJECT INFORMATION:
