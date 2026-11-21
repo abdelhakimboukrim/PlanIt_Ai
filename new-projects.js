@@ -1,6 +1,6 @@
 import prompto from './javaScript/prompt.js'
 import { AIdata2 } from './javaScript/api.js';
-
+import { modal_hundler } from "./javaScript/settings.js";
 
 const projectForm=document.getElementById('projetForm')
 //inputs
@@ -14,10 +14,19 @@ const newdays        = document.querySelector('#days');
 const newdifficulty  = document.querySelector('#difficulty');
 
 // projectForm.addEventListener()
+modal_hundler()
+
+
 
 projectForm.addEventListener('submit' ,(e)=>{
  let new_project={}
    e.preventDefault()
+
+  const API_key=localStorage.getItem('API_key')
+  if(API_key===null)(alert('please inter your gemini api key in settings '))
+
+
+
     const isvalid =$(projectForm).parsley().isValid()
    
   if (!isvalid) return
@@ -34,7 +43,7 @@ projectForm.addEventListener('submit' ,(e)=>{
     projectForm.reset()
   // window.location.href="index.html"
 console.log(prompt(new_project))
-AIdata2('gemini-3.5-flash-lite','',new_project)
+AIdata2('gemini-3.5-flash-lite',API_key,new_project)
 
 })
 // const new_project=JSON.parse(localStorage.getItem('new-project'))

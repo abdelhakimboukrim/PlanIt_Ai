@@ -41,6 +41,6 @@ Return ONLY a valid JSON object, with no markdown, no code fences and no text be
   ]
 }
   also add keys for values i sent your 
-  like descriptin and devloupers and dificuly under 'description', 'Ndevs' and 'difficulty'
+  like descriptin , days , devloupers and dificuly under 'description', 'days','Ndevs' and 'difficulty'
 Property names and allowed values must be written exactly as shown above.estimatedTime and totalEstimatedHours must be numbers, not strings.totalEstimatedHours must equal the sum of all estimatedTime values.Generate between 8 and 40 tasks, depending on the project duration, the team size and the difficulty level.`
 }

@@ -197,14 +197,19 @@ export function renderTasks(project){
     const doneTaskContainer = document.getElementById('done')
     const toDoTasksContaier = document.getElementById('todo')
     const inProgressTasksContainer = document.getElementById('inprogress')
+    const tasks_hero=document.getElementById('task-hero')
 
+    tasks_hero.innerHTML=`
+    <h1 class = 'font-thin text-5xl from-neutral-900 p-10'>${project.projectName}</h1>
+    <p class ='text-3xl text-slate-500 mx-40 '>${project.days} jour . ${project.Ndevs} Devlopeurs .   ${Math.floor(project.tasks.filter((t)=>t.status==='Done').length/project.tasks.length*100)}% Termine</p>
+    `
     for (let item of project.tasks) {
         const article = document.createElement('article')
         article.classList.add('taskCard')
         article.innerHTML = `  
         <h3>${item.id}</h3>
 
-        <P>${item.title}</P>
+        <P class="text-3xl text-slate-700">${item.title}</P>
 
         <div class='stats'>
 

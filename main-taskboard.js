@@ -26,3 +26,4 @@ renderTasks(current_projects[Number([window.location.search.split('=')[1]])])
 // console.log(data ,'reeeee')
 
 console.log(Number([window.location.search.split('=')[1]])) 
+

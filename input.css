@@ -111,7 +111,7 @@
   @apply flex gap-4 flex-wrap
 }
 .stats span { 
-  @apply border shadow-sm bg-slate-300 rounded-3xl border-solid p-3
+  @apply border shadow-sm bg-[#6eede2] rounded-3xl border-solid p-3 w-[110px] text-center
 }
 
 
@@ -124,7 +124,7 @@
 
 
 .tasksContainer{
-  @apply flex flex-col  gap-5 w-[500px]  h-screen overflow-auto border border-gray-400 border-solid  rounded-md shadow-xl p-4 font-thin 
+  @apply flex flex-col  gap-5 w-[650px]  h-[1200px] overflow-auto border border-gray-400 border-solid  rounded-md shadow-xl p-4 font-thin 
   
 
 
@@ -133,8 +133,11 @@
 
 
 }
+.tasksContainer h2{
+  @apply p-5 mb-5 text-3xl font-bold sticky top-1  w-[110%] bg-[#0b1c1a] rounded-xl text-[#0f766e]
+}
 .taskCard  {
-  @apply  flex flex-col gap-10 w-[90%] border border-gray-400 border-solid  rounded-md shadow-sm p-4 font-thin 
+  @apply  flex flex-col gap-10 w-[90%] border border-gray-400 border-solid  rounded-md shadow-sm p-4 font-thin text-2xl
   
 }
 
