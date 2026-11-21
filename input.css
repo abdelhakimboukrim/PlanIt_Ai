@@ -86,12 +86,12 @@
 }
 
 .projectCard{
-  @apply  flex flex-col gap-10 m-5 w-[500px] border border-gray-400 border-solid  rounded-md shadow-sm p-4 font-thin 
+  @apply  flex flex-col gap-10 m-5 w-[700px] border border-gray-400 border-solid  rounded-md shadow-sm p-4 font-thin 
   
 }
 
 .projectCard h2{
-  @apply text-black text-2xl 
+  @apply text-black text-5xl
 }
 
 .progressBar{
@@ -111,7 +111,7 @@
   @apply flex gap-4 flex-wrap
 }
 .stats span { 
-  @apply border shadow-sm bg-[#6eede2] rounded-3xl border-solid p-3 w-[110px] text-center
+  @apply border shadow-sm bg-[#6eede2] rounded-3xl border-solid p-3 w-fit text-center text-2xl font-thin
 }
 
 

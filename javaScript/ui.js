@@ -213,9 +213,9 @@ export function renderTasks(project){
 
         <div class='stats'>
 
-        <span>${item.estimatedTime}</span>
-        <span>${item.size}</span>
-        <span>${item.deadline}</span>
+        <span>${item.estimatedTime}H</span>
+        <span>size:${item.size}</span>
+        <span>due in: ${item.deadline}</span>
         <span>${item.priority}</span>
          
         </div>`
